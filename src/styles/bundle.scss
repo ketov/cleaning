@@ -1,0 +1,33 @@
+
+// Bootstrap
+//@import "_bootstrap.scss";
+
+// Owl-carousel
+//@import "../../bower_components/owl.carousel/dist/assets/owl.carousel.css";
+
+@import '_variables.scss';
+
+@import '_main.scss';
+
+// Элементы(кнопки, формы и т. д.)
+//@import '_elements.scss';
+
+// Блоки
+@import 'blocks/author.scss';
+@import 'blocks/courses.scss';
+@import 'blocks/economy.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/for.scss';
+@import 'blocks/form.scss';
+@import 'blocks/header.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/offer.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/video.scss';
+
+// Страницы
+@import 'pages/all-pages.scss';
+
+// Библиотеки
+@import 'libs/bootstrap.scss';
+@import 'libs/bootstrap-responsive.scss';

@@ -1,0 +1,208 @@
+html, body {
+    min-height: 100%;
+}
+
+html{
+    position: relative;   
+}
+
+body{
+    font-family: $CR;
+    font-size: 110%;
+    margin: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 2%;
+    width: 96%;
+}
+
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@font-face{
+    font-family: CirceRegular;
+    src: url('../fonts/Circe-Regular.ttf');
+}
+
+@font-face{
+    font-family: CirceBold;
+    src: url('../fonts/Circe-Bold.ttf');
+}
+
+@font-face{
+    font-family: PlayfairDisplayRegular;
+    src: url('../fonts/Playfair-Display.ttf');
+}
+
+a{
+    border-bottom: 1px solid $red;
+}
+
+h1{
+    font-family: $PfdR;
+    font-size: 410%;
+    font-weight: normal;
+    line-height: 120%;
+    margin: 0;
+}
+
+h2{
+    font-family: $PfdR;
+    font-size: 340%;
+    font-weight: normal;
+    line-height: 120%;
+    margin: 0;
+    text-align: center;
+}
+
+h3{
+    font-family: $PfdR;
+    font-size: 215%;
+    font-weight: normal;
+    line-height: 120%;
+    margin: 45px 0 0 0;
+}
+
+h4{
+    font-family: $PfdR;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 120%;
+    margin: 0;
+}
+
+p{
+    margin: 24px 0 0 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    li{
+        background-image: url(../img/for-list.svg);
+        background-position: 0px 11px;
+        background-repeat: no-repeat;
+        background-size: 18px;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 26px;
+    }
+}
+
+.ul-show{
+    display: none;
+    &--no-bg{
+        background: none;
+    }
+}
+
+button{
+    background: $red;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-family: $CB;   
+    font-size: 100%;
+    outline: none;
+    padding: 14px 29px 15px;
+    top: 0;
+    transition: 0.25s;
+    &:hover{
+        background: rgba(252, 0, 60, 1);
+    }
+    &:active{
+        position:relative;
+        top: 2px;
+    }
+}
+
+.comment{
+    font-size: 145%;
+    margin: 25px 0 40px;
+    text-align: center;
+}
+
+.big-p{
+    font-size: 200%;
+    line-height: 140%;
+    margin: 0;
+}
+
+@media(max-width: 1050px){
+    h1{
+        font-size: 340%;
+    }
+    .big-p{
+        font-size: 160%;
+        line-height: 140%;
+    }
+    .comment{
+        font-size: 120%;
+    }
+}
+
+@media(max-width: 850px){
+    h1 {
+        font-size: 280%;
+    }
+    h2{
+        font-size: 215%;
+        line-height: 120%;
+    }
+    h3{
+        font-size: 160%;
+        line-height: 120%;
+    }
+    h4{
+        font-size: 120%;
+        line-height: 120%;
+    }
+    .big-p{
+        font-size: 140%;
+    }
+    ul{
+        li{
+            margin: 12px 0 0 0;
+        }
+    }
+    p {
+        margin: 16px 0 0;
+    }
+}
+
+@media(max-width: 767px){
+    .comment{
+        font-size: 100%;
+        margin: 15px 0 25px;
+    }
+}
+
+@media(max-width: 400px){
+    h1{
+        font-size: 200%;
+    }
+    h2{
+        font-size: 180%;
+        line-height: 120%;
+    }
+    h3{
+        font-size: 160%;
+    }
+    h4{
+        font-size: 120%;
+    }
+}
