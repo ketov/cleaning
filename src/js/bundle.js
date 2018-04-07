@@ -22,8 +22,9 @@
 import "../../bower_components/owl.carousel/dist/owl.carousel.js";
 
 // Библиотеки
+import "script!./libs/parallax.min.js";
 import "script!./libs/swiper.min.js";
-import "script!./libs/jquery.simple-scroll-follow.min.js";
+import "script!./libs/jqueryui1.12.1.js";
 
 
 // Собственный js
@@ -31,5 +32,5 @@ import "./main";
 import "./blocks/form";
 import "./blocks/header";
 
-import "./pages/about-company";
+import "./pages/general";
 import "./pages/contacts";

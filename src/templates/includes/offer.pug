@@ -1,7 +1,12 @@
-section.offer
-    h1 
-        | Получите профессию 
-        br 
-        | «броумастер» за&nbsp;2&nbsp;неделии
-    p.comment и зарабатывайте до 200 000 руб. в месяц на процедуре моделирования бровей
+section.offer.parallax-window(data-parallax="scroll" data-image-src="assets/img/offer-bg.jpg")
+    h1 Генеральная уборка квартир в московской области от 1 500 руб.
+    p.comment Работаем по направлениям: Рублёвское, Новорижское, Ильинское, Волоколамское шоссе, район Истры.
+    
+    p
+        label(for="amount") Maximum price:
+        input(type="text" id="amount" readonly style="border:0; color: #f6931f; font-weight: bold;")
+    div#slider-range-min
+    div#amount2
+
+
     button.offer__button Подробнее об экономике
