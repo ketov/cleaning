@@ -1,65 +1,55 @@
 header{
-    background: $black;
-    padding: 18px 0 20px;
+    background: rgba(255, 255, 255, 0.9);    
+    left: 0;
+    padding: 12px 0 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .logo{
+        color: $green;
+        float: left;
+        font-size: 150%;
+        margin: 5px 0 0 0;
+    }
     nav{
-        text-align: center;
+        float: left;
+        margin: 12px 0 0 3%;
+        width: 50%;
         a{
-            color: $white;
-            margin: 0 3%;
+            color: $black;
+            margin: 0 6% 0 0;
             transition: 0.2s;
             &:hover{               
-                color: $red;
+                color: $orange;
             }
         }
+    }
+    button{
+        float: right;
     }
 }
 
 @media(max-width: 1400px){
-    header{
-        nav{
-            a{
-                margin: 0 2.5%;
-            }
-        }
-    }
+
 }
 
 @media(max-width: 1250px){
-    header{
-        nav{
-            a{
-                margin: 0 2%;
-            }
-        }
-    }
+
 }
 
 @media(max-width: 1150px){
-    .header{
-        &__economy{
-            display: none;
-        }
-    }
+
 }
 
 @media(max-width: 850px){
-    .header{
-        &__video{
-            display: none;
-        }
-    }
+
 }
 
 @media(max-width: 650px){
-    .header{
-        &__author{
-            display: none;
-        }
-    }
+
 }
 
 @media(max-width: 500px){
-    header{
-        display: none !important;
-    }
+
 }

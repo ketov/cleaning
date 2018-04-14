@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    font-family: $CR;
+    font-family: $GR;
     font-size: 110%;
     margin: 0;
 }
@@ -33,35 +33,29 @@ body{
 }
 
 @font-face{
-    font-family: CirceRegular;
-    src: url('../fonts/Circe-Regular.ttf');
+    font-family: GeometriaRegular;
+    src: url('../fonts/Geometria.ttf');
 }
 
 @font-face{
-    font-family: CirceBold;
-    src: url('../fonts/Circe-Bold.ttf');
-}
-
-@font-face{
-    font-family: PlayfairDisplayRegular;
-    src: url('../fonts/Playfair-Display.ttf');
+    font-family: GeometriaBold;
+    src: url('../fonts/Geometria-Bold.ttf');
 }
 
 a{
-    border-bottom: 1px solid $red;
+    border-bottom: 1px solid $orange;
 }
 
 h1{
-    font-family: $PfdR;
-    font-size: 410%;
+    font-size: 310%;
     font-weight: normal;
     line-height: 120%;
     margin: 0;
 }
 
 h2{
-    font-family: $PfdR;
-    font-size: 340%;
+    color: $green;
+    font-size: 310%;
     font-weight: normal;
     line-height: 120%;
     margin: 0;
@@ -69,15 +63,14 @@ h2{
 }
 
 h3{
-    font-family: $PfdR;
-    font-size: 215%;
-    font-weight: normal;
+    color: $green;
+    font-family: $GB;
+    font-size: 120%;
     line-height: 120%;
-    margin: 45px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 h4{
-    font-family: $PfdR;
     font-size: 140%;
     font-weight: normal;
     line-height: 120%;
@@ -93,12 +86,20 @@ ul{
     margin: 0 0 20px 0;
     padding: 0;
     li{
-        background-image: url(../img/for-list.svg);
-        background-position: 0px 11px;
-        background-repeat: no-repeat;
-        background-size: 18px;
+        line-height: 150%;
         margin: 20px 0 0 0;
         padding: 0 0 0 26px;
+        position: relative;
+        &:before{
+            border: 1px solid $orange;
+            border-radius: 9px;
+            content: '';
+            height: 6px;
+            left: 0;
+            position: absolute;
+            top: 10px;
+            width: 6px;
+        }
     }
 }
 
@@ -110,30 +111,24 @@ ul{
 }
 
 button{
-    background: $red;
+    background: $orange;
     border: none;
-    border-radius: 3px;
+    border-radius: 50px;
     color: #fff;
     cursor: pointer;
-    font-family: $CB;   
+    font-family: $GR;   
     font-size: 100%;
     outline: none;
     padding: 14px 29px 15px;
     top: 0;
     transition: 0.25s;
     &:hover{
-        background: rgba(252, 0, 60, 1);
+        /*background: rgba(252, 0, 60, 1);*/
     }
     &:active{
         position:relative;
         top: 2px;
     }
-}
-
-.comment{
-    font-size: 145%;
-    margin: 25px 0 40px;
-    text-align: center;
 }
 
 .big-p{

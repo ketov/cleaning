@@ -13,14 +13,14 @@
 //@import '_elements.scss';
 
 // Блоки
+@import 'blocks/additional.scss';
+@import 'blocks/advantages.scss';
 @import 'blocks/author.scss';
-@import 'blocks/economy.scss';
 @import 'blocks/footer.scss';
-@import 'blocks/for.scss';
 @import 'blocks/form.scss';
+@import 'blocks/geography.scss';
 @import 'blocks/header.scss';
 @import 'blocks/offer.scss';
-@import 'blocks/reviews.scss';
 
 // Страницы
 @import 'pages/all-pages.scss';

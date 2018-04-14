@@ -1,0 +1,39 @@
+.additional{
+    padding: 100px 0 0 0;
+    &__block{
+        border-bottom: none;    
+        margin: 50px 0 0 0;
+        position: relative;
+        top: 0;
+        transition: 0.15s ease;
+        &:hover{
+            top: -5px;
+        }
+        &--green{
+            background: $green;
+            &:hover span{
+                color: $orange;
+            }
+            span{
+                border-bottom: 2px solid $orange;
+            }
+        }
+        &--orange{
+            background: $orange;
+            &:hover span{
+                color: $green;
+            }            
+            span{
+                border-bottom: 2px solid $green;
+            }
+        }
+        span{
+            color: #fff;
+            transition: 0.2s;
+        }
+        h3{
+            margin: 140px 0;
+            text-align: center;
+        }
+    }
+}
