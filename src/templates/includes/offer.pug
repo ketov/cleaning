@@ -3,8 +3,17 @@ section.offer.parallax-window(data-parallax="scroll" data-image-src="assets/img/
         h1 Генеральная уборка квартир в&nbsp;московской области от 1 500 руб.
         p.comment Работаем по направлениям: Рублёвское, Новорижское, Ильинское, Волоколамское шоссе, район Истры.
 
-        p
-            label(for="amount") Maximum price:
-            input(type="text" id="amount" readonly style="border:0; color: #f6931f; font-weight: bold;")
-        div#slider-range-min
+        div.row-fluid.show-grid
+            div.span6.offset2
+                div.span9 
+                    label(for="amount") Площадь квартиры
+                    div#slider-range
+                    
+                div.span2
+                    input(type="text" id="amount" readonly)
+
+                div.span1.unit
+                    | м
+                    sup 2
+
         div#amount2

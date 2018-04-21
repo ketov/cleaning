@@ -2,29 +2,21 @@
 
 
 /*function isMobile() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        return true
-    } else {
-        return false
-    }
-}*/
+ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+ return true
+ } else {
+ return false
+ }
+ }*/
 
 $(document).ready(function () {
-    $('.courses__show').on('click', function(){
-        var el = $(this);
-        var elementToShow = el.siblings('.ul-show')
-        if(el.hasClass('active')){
-            el.removeClass('active');
-            elementToShow.stop(true, true).slideUp(250);
-        }
-        else{
-            el.addClass('active');
-            elementToShow.stop(true, true).slideDown(250);
-        }
+    $('.close-form').on('click', function () {
+        $('#form-header-general').stop(true, true).fadeOut(300);
+        setTimeout(function () {
+            $('.black-bg').stop(true, true).fadeOut(300);
+        }, 350);
     });
 });
-
-
 
 
 $(document).ready(function () {

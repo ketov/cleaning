@@ -9,9 +9,17 @@
     .comment{
         font-size: 115%;
         line-height: 150%;
-        margin: 16px auto 40px;
+        margin: 16px auto 60px;
         max-width: 660px;
         text-align: center;
+    }
+    label{
+        margin: 0 0 20px 0;
+    }
+    input{
+        margin: 14px 0 0 0;
+        text-align: center;        
+        width: 100%;
     }
 }
 

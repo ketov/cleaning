@@ -10,15 +10,19 @@ html
         meta(content='width' name='MobileOptimized')
         meta(content='yes' name='apple-mobile-web-app-capable')
         link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        script(src="https://maps.googleapis.com/maps/api/js")
     body
+        include includes/black-bg
+        include includes/form-header-general
         include includes/header
         include includes/offer
         include includes/advantages
         include includes/geography
+        include includes/works-general
         include includes/additional
-
-        include includes/author
+        include includes/services
         include includes/form
+        include includes/map
         include includes/footer
        
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")

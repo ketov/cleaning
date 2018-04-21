@@ -31,6 +31,6 @@ import "script!./libs/jqueryui1.12.1.js";
 import "./main";
 import "./blocks/form";
 import "./blocks/header";
+import "./blocks/map";
 
 import "./pages/general";
-import "./pages/contacts";

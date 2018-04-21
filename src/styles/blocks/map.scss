@@ -1,0 +1,54 @@
+.map-container{
+    position: relative;
+    &__content{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        h2{
+            color: $black;
+            position: absolute;
+            text-align: left;
+            top: 70px;
+        }
+    }
+    &__contacts{
+        background: $white;
+        padding: 60px 60px 70px 60px;
+        position: absolute;
+        top: 210px;
+        p{
+            margin: 0;
+        }
+        a{
+            border-bottom: none;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .phone{
+            h3{
+                color: $black;
+            }
+        }
+        .email{
+            color: $black;
+            margin: 6px 0 0 0;
+        }
+        button{
+            margin: 40px 0 0 0;
+            width: 100%;
+        }
+    }
+}
+
+#map{
+    height: 700px;
+}
+
+@media(min-width: 1400px){
+    .map-container__content.wrapper{
+        left: 50%;
+        margin-left: -700px;
+        padding: 0;
+    }
+}

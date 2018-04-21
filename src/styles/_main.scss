@@ -32,6 +32,16 @@ body{
     vertical-align: middle;
 }
 
+input{
+    background: #eceff1;
+    border: none;
+    border-radius: 2px;
+    font-family: $GR;
+    font-size: 100%;
+    outline: none;
+    padding: 14px 0 16px 16px;    
+}
+
 @font-face{
     font-family: GeometriaRegular;
     src: url('../fonts/Geometria.ttf');
@@ -119,7 +129,7 @@ button{
     font-family: $GR;   
     font-size: 100%;
     outline: none;
-    padding: 14px 29px 15px;
+    padding: 11px 29px 15px;
     top: 0;
     transition: 0.25s;
     &:hover{
@@ -128,6 +138,45 @@ button{
     &:active{
         position:relative;
         top: 2px;
+    }
+}
+
+.c-form{
+    background: $white;
+    display: none;
+    left: 50%;
+    margin: 0 0 0 -400px;
+    padding: 28px 50px 50px 50px;
+    position: absolute;
+    width: 700px;
+    z-index: 4;
+}
+
+.close-form{
+    cursor: pointer;
+    height: 24px;
+    padding: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    &:hover .close-form__line{
+        background: $orange; 
+    }
+    &__line{
+        background: $black;
+        height: 2px;
+        left: 12px;
+        position: absolute;
+        top: 22px;
+        transition: 0.2s;
+        width: 24px;
+        &--1{
+            transform: rotate(45deg);
+        }
+        &--2{
+            transform: rotate(-45deg);
+        }
     }
 }
 

@@ -1,0 +1,37 @@
+.services{
+    padding: 100px 0 110px;
+    .row-fluid {
+        margin: 60px 0 0;
+    }
+    &__service{        
+        background-repeat: no-repeat;
+        background-size: 52px;
+        line-height: 135%;
+        min-height: 60px !important;
+        padding: 0 0 0 60px;
+        &--window{
+            background-image: url('../img/services-window.svg');
+        }
+        &--refrigerator{
+            background-image: url('../img/services-refrigerator.svg');
+        }
+        &--oven{
+            background-image: url('../img/services-oven.svg');
+        }
+        &--chandelier{
+            background-image: url('../img/services-chandelier.svg');
+        }
+        &--rubbish{
+            background-image: url('../img/services-rubbish.svg');
+        }
+        &--yard{
+            background-image: url('../img/services-yard.svg');
+        }
+        &--ware{
+            background-image: url('../img/services-ware.svg');
+        }
+        &--seams{
+            background-image: url('../img/services-seams.svg');
+        }
+    }
+}

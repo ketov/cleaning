@@ -1,17 +1,17 @@
 $(document).ready(function () {
     $(function () {
-        $("#slider-range-min").slider({
+        $("#slider-range").slider({
             range: "min",
-            value: 37,
-            min: 1,
+            value: 20,
+            min: 20,
             max: 700,
             slide: function (event, ui) {
-                $("#amount").val("$" + ui.value);
-                $('#amount2').html(ui.value + 1);
+                $("#amount").val(ui.value);
+                $('#amount2').html(ui.value + 10);
             }
         });
-        $("#amount").val("$" + $("#slider-range-min").slider("value"));
-        $('#amount2').html($("#slider-range-min").slider("value") + 1);
+        $("#amount").val($("#slider-range").slider("value"));
+        $('#amount2').html($("#slider-range").slider("value") + 1);
     });
 });
 
