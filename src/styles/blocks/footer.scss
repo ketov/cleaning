@@ -1,5 +1,12 @@
 footer{
     padding: 21px 0 26px;
+    a{
+        color: $black;
+        transition: 0.2s;
+        &:hover{
+            color: $orange;
+        }
+    }
     .agree{
         color: $black;
     }
@@ -10,6 +17,52 @@ footer{
         h3{
             color: $black;
             margin: 0;
+        }
+    }
+}
+
+.footer--agreement{
+    margin: 90px 0 0 0;
+    .row-fluid{
+        border-top: 1px solid #e6e6e6;
+        padding: 16px 0 0 0;
+    }
+}
+
+@media(max-width: 1100px){
+    footer{
+        font-size: 90%;
+        padding: 16px 0 20px;
+    }
+    .footer--agreement{
+        margin: 50px 0 0 0;
+    }
+}
+
+@media(max-width: 1000px){
+    .footer--agreement{
+        margin: 30px 0 0 0;
+    }
+}
+
+@media(max-width: 767px){
+    footer{
+        font-size: 100%;
+        padding: 14px 0 14px;
+        text-align: center;
+    }
+    .footer--agreement{
+        margin: 28px 0 0 0;
+    }
+    .footer{
+        &__agree{
+            margin: 5px 0 0 0;
+        }
+        &__ketov{
+            margin: 8px 0 0 0;
+        }
+        &__phone{
+            margin: 9px 0 0 0;
         }
     }
 }

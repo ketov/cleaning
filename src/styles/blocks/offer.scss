@@ -1,6 +1,17 @@
+#amount2{
+    float: left;
+    span{
+        font-size: 70%;
+    }
+}
+
+.unit{
+    margin: 41px 0 0 10px;
+}
+
 .offer{
     color: $white;
-    padding: 180px 0 140px;
+    padding: 180px 0 190px;
     h1{
         margin: 0 auto;
         max-width: 1120px;
@@ -14,21 +25,44 @@
         text-align: center;
     }
     label{
-        margin: 0 0 20px 0;
+        margin: 0 0 34px 0;
     }
     input{
-        margin: 14px 0 0 0;
+        margin: 30px 0 0 0;
+        padding-left: 0;
         text-align: center;        
         width: 100%;
     }
 }
 
-@media(max-width: 1050px){
-
+@media(max-width: 1100px){
+    .offer{
+        padding: 120px 0 140px;
+        .comment{
+            margin: 16px auto 40px;
+        }
+    }
 }
 
-@media(max-width: 850px){
+@media(max-width: 1000px){
+    .offer{
+        .comment{
+            margin: 10px auto 36px;
+        }
+    }
+}
 
+@media(max-width: 767px){
+    #range-slider-input{
+        float: left;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .unit{
+        float: left;
+        text-align: center;
+        width: 10%;
+    }
 }
 
 @media(max-width: 500px){

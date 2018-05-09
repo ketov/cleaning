@@ -1,6 +1,6 @@
 <?php
 
-$name = '';
+/*$name = '';
 $course = '';
 if (isset($_POST['name'])) {
     $name = $_POST['name'];
@@ -9,7 +9,7 @@ if (isset($_POST['name'])) {
 if (isset($_POST['course'])) {
     $course = $_POST['course'];
     $course = iconv("utf-8", "windows-1251", "" . $course);
-}
+}*/
 
 if (isset($_POST['email'])) {
     $email = $_POST['email'];
@@ -22,12 +22,14 @@ if (isset($_POST['email'])) {
 }
 
 if ($email !== false) {
-    $message = $name . "<br />" . $email . "<br />" . $course;
+    //$message = $name . "<br />" . $email . "<br />" . $course;
 
+	$message = $email;
+	
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=windows-1251' . "\r\n";
 
-    mail("ketov1992@list.ru", iconv("utf-8", "windows-1251", "Заявка с сайта школы"), $message, $headers);
+    mail("ketov1992@list.ru", iconv("utf-8", "windows-1251", "Генеральная.ПолучитьКонсультацию"), $message, $headers);
 
 
     header("Success: ");

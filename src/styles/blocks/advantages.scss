@@ -11,18 +11,53 @@
     }
 }
 
-@media(max-width: 1050px){
-
+@media(max-width: 1100px){
+    .advantages{
+        padding: 60px 0 0 0;
+        h2{
+            margin: 0 0 40px;
+        }
+        h3{
+            margin-top: 20px;
+        }
+        img{
+            max-width: 110px!important;
+        }
+    }
 }
 
-@media(max-width: 850px){
-
+@media(max-width: 1000px){
+    .advantages{
+        padding: 40px 0 0;
+        h2{
+            margin: 0 0 30px;
+        }
+        img{
+            max-width: 80px!important;
+        }
+    }
 }
 
 @media(max-width: 767px){
-
+    .advantages{
+        h2{
+            margin: 0 0 10px;
+        }
+        h3{
+            margin-top: 8px;
+        }
+        .span3{
+            margin: 0 0 28px 0;
+        }
+    }
 }
 
-@media(max-width: 500px){
-
+@media(max-width: 600px){
+    .advantages{
+        img{
+            display: block;
+            margin: 20px auto 0;
+            max-width: 140px!important;
+        }
+    }
 }

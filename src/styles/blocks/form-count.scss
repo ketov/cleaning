@@ -1,0 +1,40 @@
+.form-count{
+    &__plate{
+        background: $white;
+        margin: -94px 0 0 0;
+        padding: 50px 3% 50px 3%;
+        border-radius: 2px;
+        box-shadow: 0px 10px 50px -6px rgba(19, 77, 127, 0.17);
+    }
+    input{
+        width: 96%;
+    }
+    button{
+        padding-left: 0;
+        padding-right: 0;
+        width: 96%;
+    }
+    p{
+        margin: 12px 0 0 0;
+    }
+}
+
+@media(max-width: 767px){
+    .form-count{
+        &__plate{
+            padding: 28px 3%;
+        }
+        input{
+            margin: 0 0 16px 0;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .form-count{
+        &__plate{
+            margin: -120px 0 0;
+            padding: 40px 6%;
+        }
+    }
+}

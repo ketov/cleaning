@@ -1,7 +1,7 @@
 doctype html
 html
     head
-        title Академия чистоты
+        title Академия чистоты | Генеральная уборка
         meta(name="description", content="")
         meta(name="keywords", content="")
         meta(charset="UTF-8") 
@@ -14,16 +14,49 @@ html
     body
         include includes/black-bg
         include includes/form-header-general
-        include includes/header
+        include includes/form-consult-general
+        
+
+        header
+            div.wrapper
+                a.logo(href="javascript:void(0);") Академия Чистоты
+                nav
+                    a.header__works(href="#") Как мы делаем уборку
+                    a.header__form(href="#") Заявка
+                    a.header__map-container(href="#") Контакты
+
+                button.header__order#header-general-button Оформить заявку
+                a.phone(href="tel:+79268026280") 
+                    h3 8 (926) 802-62-80
+                div.clear
+
+
         include includes/offer
+        include includes/form-count-general
         include includes/advantages
         include includes/geography
         include includes/works-general
         include includes/additional
         include includes/services
-        include includes/form
-        include includes/map
-        include includes/footer
+        include includes/form-general
+
+        include includes/contacts-general
+
+        //include includes/map
+        footer.footer--agreement
+            div.wrapper
+                div.row-fluid.show-grid
+                    div.span3.footer__copyright © 2018 Академия Чистоты
+                    div.span3.footer__agree
+                        a.agree(href="agreement.html") Соглашение на обработку персональных данных
+                    div.span3.footer__ketov
+                        span
+                            | Разработка — 
+                            a.ketov(href="http://ketov.name" target="_blank") Юрий Кетов
+                    div.span3.phone.footer__phone
+                        a(href="tel:+79268026280") 
+                            h3 8 (926) 802-62-80
+        //include includes/footer
        
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
         script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")

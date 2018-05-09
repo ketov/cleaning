@@ -5,17 +5,18 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 4;
     .logo{
-        color: $green;
+        border-bottom: none;
+        color: $green !important;
         float: left;
-        font-size: 150%;
-        margin: 5px 0 0 0;
+        font-size: 130%;
+        margin: 5px 0 0;
     }
     nav{
         float: left;
-        margin: 12px 0 0 3%;
-        width: 50%;
+        margin: 9px 0 0 3%;
+        width: 44%;
         a{
             color: $black;
             margin: 0 6% 0 0;
@@ -25,25 +26,59 @@ header{
             }
         }
     }
+    .phone{
+        border-bottom: none;
+        float: right;        
+        h3{
+            color: $black;
+            margin: 11px 22px 0 0;
+        }
+    }
     button{
         float: right;
     }
 }
 
-@media(max-width: 1400px){
-
+@media(max-width: 1350px){
+    header{
+        nav{
+            margin: 9px 0 0 2%;
+            width: 36%;
+        }
+    }
 }
 
-@media(max-width: 1250px){
-
+@media(max-width: 1200px){
+    header{
+        .phone{
+            display: none;
+        }
+        .logo{
+            width: 25%;
+        }
+        nav{
+            margin: 9px 0 0 0;
+            text-align: center;
+            width: 50%;
+        }
+        button{
+            width: 25%;
+        }
+    }
 }
 
-@media(max-width: 1150px){
-
-}
-
-@media(max-width: 850px){
-
+@media(max-width: 1000px){
+    header{
+        nav{
+            display: none;
+        }
+        .logo{
+            width: auto;
+        }
+        button{
+            width: auto;
+        }
+    }
 }
 
 @media(max-width: 650px){
@@ -51,5 +86,9 @@ header{
 }
 
 @media(max-width: 500px){
-
+    header{
+        button{
+            display: none;
+        }
+    }
 }

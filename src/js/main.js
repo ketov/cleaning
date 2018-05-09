@@ -9,40 +9,27 @@
  }
  }*/
 
+/*scrollTo('#logo', '#kozub-block');*/
+function scrollTo(element, anchor) {
+    $(element).click(function () {
+        var destination = $(anchor).offset().top;
+        jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 500);
+        return false;
+    });
+
+}
+
+
+
 $(document).ready(function () {
     $('.close-form').on('click', function () {
-        $('#form-header-general').stop(true, true).fadeOut(300);
+        $(this).parent('.c-form').stop(true, true).fadeOut(300);
         setTimeout(function () {
             $('.black-bg').stop(true, true).fadeOut(300);
         }, 350);
     });
-});
 
-
-$(document).ready(function () {
-    $('#hamburger').on('click', function () {
-        var el = $(this);
-        var p = el.parent('.in-wrapper');
-        if (el.hasClass('active')) {
-            p.children('nav').stop(true, true).slideUp(250);
-            //p.children('.contacts').stop(true, true).slideUp(250);
-            el.removeClass('active');
-            $('header').removeClass('active');
-        } else {
-            p.children('nav').stop(true, true).slideDown(250);
-            //p.children('.contacts').stop(true, true).slideDown(250);
-            el.addClass('active');
-            $('header').addClass('active');
-        }
-        // $('#black-bg').stop(true, true).fadeIn(400);
-        //setTimeout(function () {
-        //    $('#video').fadeIn(400);
-        //}, 480);
-    });
-
-
-
-
-
-
+    scrollTo('.header__works', '.works');
+    scrollTo('.header__form', '.form');
+    scrollTo('.header__map-container', '.contacts');
 });

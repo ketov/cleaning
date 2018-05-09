@@ -52,8 +52,17 @@ input{
     src: url('../fonts/Geometria-Bold.ttf');
 }
 
+.c-bold{
+    font-family: $GB;
+}
+
 a{
     border-bottom: 1px solid $orange;
+    color: $black !important;
+    transition: 0.2s;
+    &:hover{               
+        color: $orange !important;
+    }
 }
 
 h1{
@@ -129,7 +138,7 @@ button{
     font-family: $GR;   
     font-size: 100%;
     outline: none;
-    padding: 11px 29px 15px;
+    padding: 13px 29px 13px;
     top: 0;
     transition: 0.25s;
     &:hover{
@@ -143,13 +152,28 @@ button{
 
 .c-form{
     background: $white;
+    border-radius: 2px;
     display: none;
     left: 50%;
-    margin: 0 0 0 -400px;
-    padding: 28px 50px 50px 50px;
+    margin: 0 0 0 -356px;
+    padding: 28px 50px 48px;
     position: absolute;
-    width: 700px;
-    z-index: 4;
+    width: 610px;
+    z-index: 6;
+    .comment{
+        margin: 12px auto;
+        max-width: 600px;
+        text-align: center;
+    }
+    input{
+        display: block;
+        margin: 28px auto;
+        width: 540px;
+    }
+    button{
+        display: table;
+        margin: 0 auto;
+    }
 }
 
 .close-form{
@@ -186,21 +210,114 @@ button{
     margin: 0;
 }
 
-@media(max-width: 1050px){
+#input-form-header-general-phone-error,
+#input-form-header-general-success,
+#input-form-header-support-phone-error,
+#input-form-header-support-success,
+#input-form-header-repair-phone-error,
+#input-form-header-repair-success
+{
+    margin: 0 0 28px 0;
+    text-align: center;
+}
+
+#input-form-count-general-phone-error,
+#input-form-count-general-success,
+#input-form-count-support-phone-error,
+#input-form-count-support-success,
+#input-form-count-repair-phone-error,
+#input-form-count-repair-success
+{
+    margin: 28px 0 19px 0;
+}
+
+.error{
+    border: 1px solid rgba(255, 0,0,1);
+}
+
+.success-text{
+    color: $green;
+}
+
+.error-text{
+    color: rgba(255, 0, 0, 1);
+}
+
+@media(max-width: 1100px){
+    ul li{
+        margin: 14px 0 0;
+    }
+}
+
+@media(max-width: 1000px){
     h1{
-        font-size: 340%;
+        font-size: 250%;
     }
-    .big-p{
-        font-size: 160%;
-        line-height: 140%;
+    h2{
+        font-size: 250%;
     }
-    .comment{
-        font-size: 120%;
+    h3{
+        font-size: 105%;
+    }
+    ul{
+        li{
+            font-size: 90%;
+            margin: 10px 0 0;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .c-form{
+        left: 4%;
+        margin-left: 0;
+        padding: 28px 8% 48px;
+        width: 76%;
+        input{
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    h1{
+        font-size: 200%;
+    }
+    h2{
+        font-size: 200%;
+    }
+    .c-form{
+        padding: 24px 8% 36px;
+        input{
+            margin: 16px auto;
+        }
+        .comment{
+            margin: 4px auto;
+        }
+    }
+
+    /*#range-repair,
+    #range-general,
+    #range-support{
+        display: none;
+    }*/
+}
+
+@media(max-width: 500px){
+    h1{
+        font-size: 180%;
+    }
+    h2{
+        font-size: 180%;
+    }
+    .c-form{
+        left: 0;
+        width: 84%;
     }
 }
 
 @media(max-width: 850px){
-    h1 {
+    /*h1 {
         font-size: 280%;
     }
     h2{
@@ -225,28 +342,25 @@ button{
     }
     p {
         margin: 16px 0 0;
-    }
+    }*/
 }
 
 @media(max-width: 767px){
-    .comment{
-        font-size: 100%;
-        margin: 15px 0 25px;
-    }
+
 }
 
 @media(max-width: 400px){
-    h1{
-        font-size: 200%;
-    }
-    h2{
-        font-size: 180%;
-        line-height: 120%;
-    }
-    h3{
-        font-size: 160%;
-    }
-    h4{
-        font-size: 120%;
-    }
+    /* h1{
+         font-size: 200%;
+     }
+     h2{
+         font-size: 180%;
+         line-height: 120%;
+     }
+     h3{
+         font-size: 160%;
+     }
+     h4{
+         font-size: 120%;
+     }*/
 }

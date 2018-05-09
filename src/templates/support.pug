@@ -1,0 +1,83 @@
+doctype html
+html
+    head
+        title Академия чистоты | Поддерживающая уборка
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        script(src="https://maps.googleapis.com/maps/api/js")
+    body
+        include includes/black-bg
+        include includes/form-header-support
+        include includes/form-consult-general
+
+        header
+            div.wrapper
+                a.logo(href="index.html") Академия Чистоты
+                nav
+                    a.header__works(href="#") Как мы делаем уборку
+                    a.header__form(href="#") Заявка
+                    a.header__map-container(href="#") Контакты
+
+                button.header__order#header-support-button Оформить заявку
+                a.phone(href="tel:+79268026280") 
+                    h3 8 (926) 802-62-80
+                div.clear
+
+
+        section.offer.parallax-window(data-parallax="scroll" data-image-src="assets/img/offer-bg.jpg")
+            div.wrapper
+                h1 Поддерживающая уборка квартир в&nbsp;московской области от 2 500 руб.
+                p.comment Работаем по направлениям: Волоколамское, Ильинское, Минское, Новорижское, Рублёвское шоссе, район Истры.
+
+                div.row-fluid.show-grid#range-support
+                    div.span6.offset2
+                        div.span9 
+                            label(for="amount") Площадь квартиры
+                            div#slider-range
+
+                        div.span2#range-slider-input
+                            input(type="text" id="amount" readonly)
+
+                        div.span1.unit
+                            | м
+                            sup 2
+
+                    div.span4
+                        div Примерная стоимость
+                        h1#amount2
+
+
+
+        include includes/form-count-support
+        include includes/advantages
+        include includes/geography
+        include includes/works-support
+        
+
+        section.additional
+            div.wrapper
+                h2 Также мы делаем
+                div.row-fluid.show-grid
+                    a(href="index.html").span6.additional__block.additional__block--green
+                        h3 
+                            span Генеральную уборку
+
+                    a(href="repair.html").span6.additional__block.additional__block--orange
+                        h3 
+                            span Уборку после ремонта
+
+
+        include includes/services-support
+        include includes/form-general
+        include includes/map
+        include includes/footer
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")
