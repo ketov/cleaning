@@ -1,21 +1,29 @@
 header{
     background: rgba(255, 255, 255, 0.9);    
     left: 0;
-    padding: 12px 0 12px;
+    padding: 5px 0 0px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 4;
     .logo{
+        
+    }
+    .logo-link{
         border-bottom: none;
         color: $green !important;
         float: left;
-        font-size: 130%;
-        margin: 5px 0 0;
+        font-size: 120%;
+        line-height: 120%;
+        margin: 4px 0 0 0;
+    }
+    .logo-img{
+        float: left;
+        width: 94px;
     }
     nav{
         float: left;
-        margin: 9px 0 0 3%;
+        margin: 16px 0 0 3%;
         width: 44%;
         a{
             color: $black;
@@ -31,18 +39,19 @@ header{
         float: right;        
         h3{
             color: $black;
-            margin: 11px 22px 0 0;
+            margin: 18px 22px 0 0;
         }
     }
     button{
         float: right;
+        margin: 6px 0 0 0;
     }
 }
 
 @media(max-width: 1350px){
     header{
         nav{
-            margin: 9px 0 0 2%;
+            margin: 16px 0 0 2%;
             width: 36%;
         }
     }
@@ -57,7 +66,7 @@ header{
             width: 25%;
         }
         nav{
-            margin: 9px 0 0 0;
+            margin: 16px 0 0 0;
             text-align: center;
             width: 50%;
         }
@@ -88,6 +97,9 @@ header{
 @media(max-width: 500px){
     header{
         button{
+            display: none;
+        }
+        .logo-link{
             display: none;
         }
     }

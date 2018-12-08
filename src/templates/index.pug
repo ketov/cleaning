@@ -10,8 +10,10 @@ html
         meta(content='width' name='MobileOptimized')
         meta(content='yes' name='apple-mobile-web-app-capable')
         link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        include includes/gtm1
         script(src="https://maps.googleapis.com/maps/api/js")
     body
+        include includes/gtm2
         include includes/black-bg
         include includes/form-header-general
         include includes/form-consult-general
@@ -19,15 +21,20 @@ html
 
         header
             div.wrapper
-                a.logo(href="javascript:void(0);") Академия Чистоты
+                div.logo
+                    img.logo-img(src="assets/img/logo.png" alt="логотип")
+                    a.logo-link(href="javascript:void(0);") 
+                        | Академия 
+                        br
+                        | Чистоты                    
                 nav
                     a.header__works(href="#") Как мы делаем уборку
                     a.header__form(href="#") Заявка
                     a.header__map-container(href="#") Контакты
 
                 button.header__order#header-general-button Оформить заявку
-                a.phone(href="tel:+79268026280") 
-                    h3 8 (926) 802-62-80
+                a.phone(href="tel:+74952087844") 
+                    h3 8 (495) 208-78-44
                 div.clear
 
 
@@ -38,7 +45,7 @@ html
         include includes/works-general
         include includes/additional
         include includes/services
-        include includes/form-general
+        include includes/form-general 
 
         include includes/contacts-general
 
@@ -54,10 +61,11 @@ html
                             | Разработка — 
                             a.ketov(href="http://ketov.name" target="_blank") Юрий Кетов
                     div.span3.phone.footer__phone
-                        a(href="tel:+79268026280") 
-                            h3 8 (926) 802-62-80
+                        a(href="tel:+74952087844") 
+                            h3 8 (495) 208-78-44
         //include includes/footer
        
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
         script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
         script(src="assets/js/app.min.js")
+        include includes/calltouch

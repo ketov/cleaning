@@ -1,0 +1,16 @@
+section.form.parallax-window(data-parallax="scroll" data-image-src="assets/img/form-bg.jpg")
+    div.wrapper
+        h2 Заявка на уборку
+        div.row-fluid.show-grid
+            div.span3.offset3 
+                input#input-form-eco-name(type="text" placeholder="Ваше имя")
+            div.span3
+                input#input-form-eco-phone(type="text" placeholder="Телефон")
+        div.row-fluid.show-grid
+            div.span6.offset3 
+                textarea#input-form-eco-message(placeholder="Сообщение")
+        div.row-fluid.show-grid
+            div.span6.offset3 
+                div#input-form-eco-success.success-text
+                div#input-form-eco-phone-error.error-text
+                button#form-eco-button Отправить

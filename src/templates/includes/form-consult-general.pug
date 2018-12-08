@@ -5,6 +5,8 @@ section.c-form#form-consult-general
     h2 Получить консультацию
     p.comment Оставьте ваш телефон. Мы свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут и&nbsp;ответим на&nbsp;все вопросы.
     input#input-form-consult-general-phone(type="text" placeholder="Номер телефона")
+    | <input id="input-form-consult-general-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+    | <input id="input-form-consult-general-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
     div#input-form-consult-general-phone-error.error-text
     div#input-form-consult-general-success.success-text
     button#form-consult-general-button Отправить!

@@ -1,0 +1,101 @@
+.what-is-eco{
+    padding: 100px 0 0 0;
+    h2{
+        margin: 0 0 20px 0;
+    }
+    &__what{
+        background: url(../../assets/img/arrow.svg) no-repeat 0 5px;
+        background-size: 72px;
+        font-size: 135%;
+        line-height: 145%;
+        padding: 7px 0 10px 92px;
+        margin: 24px 0 0 0;
+    }
+}
+
+@media(max-width: 1100px){
+    .what-is-eco{
+        padding: 60px 0 0 0;
+        h2{
+            margin: 0 0 16px;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .what-is-eco{
+        padding: 40px 0 0;
+        &__what{
+            font-size: 110%;
+            line-height: 140%;
+            padding: 7px 0 18px 92px;
+            margin: 12px 0 0;
+        }
+        h2{
+            margin: 0 0 16px;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .what-is-eco{
+        h2{
+            margin: 0 0 12px;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    
+}
+
+
+
+
+
+.to-who-eco{
+    background: $green;
+    margin: 110px 0 0 0;
+    padding: 76px 0 100px;
+    h2{
+        color: $white;
+        margin: 0 0 20px 0;
+    }
+    p{
+        color: $white;
+        line-height: 145%;
+        margin: 0 auto;
+        max-width: 670px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 1100px){
+    .to-who-eco{
+        h2{
+            margin: 0 0 16px;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .to-who-eco{
+        margin: 28px 0 0;
+        padding: 48px 0 64px;
+        h2{
+            margin: 0 0 16px;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .to-who-eco{
+        h2{
+            margin: 0 0 12px;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    
+}

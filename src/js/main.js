@@ -32,4 +32,20 @@ $(document).ready(function () {
     scrollTo('.header__works', '.works');
     scrollTo('.header__form', '.form');
     scrollTo('.header__map-container', '.contacts');
+    
+    $('.tabs__tab').on('click', function(){
+        var el = $(this);
+        if(el.hasClass('active')){
+            return;
+        }
+        else{
+            el.siblings('.tabs__tab').removeClass('active');
+            el.addClass('active');
+            var show = el.attr('data-show');
+            var hide = el.attr('data-hide');
+            $("#"+show).show();
+            $("#"+hide).hide();
+        }
+    });
+    
 });

@@ -23,7 +23,7 @@ import "../../bower_components/owl.carousel/dist/owl.carousel.js";
 
 // Библиотеки
 import "script!./libs/parallax.min.js";
-import "script!./libs/swiper.min.js";
+//import "script!./libs/swiper.min.js";
 import "script!./libs/jqueryui1.12.1.js";
 import "script!./libs/jquery.ui.touch-punch.min";
 
@@ -33,8 +33,9 @@ import "./main";
 import "./blocks/contacts";
 import "./blocks/form";
 import "./blocks/header";
-import "./blocks/map";
+//import "./blocks/map";
 
+import "./pages/eco";
 import "./pages/general";
 import "./pages/support";
 import "./pages/repair";

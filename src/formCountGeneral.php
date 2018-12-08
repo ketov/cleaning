@@ -18,24 +18,28 @@ if (isset($_POST['name'])) {
 }
 
 if (isset($_POST['phone'])) {
-    $phone = $_POST['phone'];
+    $phone = $_POST['phone'];    
+    $campaign = $_POST['campaign'];
+    $term = $_POST['term'];
     if (mb_strlen($phone) <= 1) {
         $phone = false;
         header("Phone:");
     } else {
-        $phone = iconv("utf-8", "windows-1251", "" . $phone);
+        $phone = iconv("utf-8", "windows-1251", "" . $phone);        
+        $campaign = iconv("utf-8", "windows-1251", "Тип компании:" . $campaign);
+        $term = iconv("utf-8", "windows-1251", "Ключевая фраза:" . $term);
     }
 }
 
 if ($phone !== false) {
     //$message = $name . "<br />" . $email . "<br />" . $course;
 
-    $message = $name . "<br />" . $phone;
+    $message = $name . "<br />" . $phone . "<br />" . $campaign. "<br />" . $term;
 	
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=windows-1251' . "\r\n";
 
-    mail("ketov1992@list.ru", iconv("utf-8", "windows-1251", "Генеральная.РассчитатьСтоимость"), $message, $headers);
+    mail("2087844@bk.ru, brainstormmedia@ya.ru, ketov1992@list.ru", iconv("utf-8", "windows-1251", "Генеральная.РассчитатьСтоимость"), $message, $headers);
 
 
     header("Success: ");

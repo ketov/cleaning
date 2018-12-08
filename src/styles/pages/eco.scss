@@ -1,0 +1,54 @@
+.eco-table{
+    .row-eco{
+        margin: 0 0 12px 0;
+        &:first-child{
+            border-bottom: 1px solid $white;
+            margin: 0 0 16px;
+            padding: 0 0 8px 0;
+        }
+    }
+    .col{
+        float: left;
+        min-height: 1px;
+        width: 33.33%;
+    }
+}
+
+@media(max-width: 1200px){
+    .eco-table{
+        float: none !important;
+        margin: 0 auto !important; 
+        width: 80% !important; 
+    }
+}
+
+@media(max-width: 1100px){
+    
+}
+
+@media(max-width: 1000px){
+    
+}
+
+@media(max-width: 850px){
+    
+}
+
+@media(max-width: 767px){
+    .eco-table{
+        width: 100% !important; 
+    }
+}
+
+@media(max-width: 600px){
+    .eco-table{
+        .col{
+            width: 50%;
+        }
+        .width100{
+            font-family: $GB;
+            margin-bottom: 4px;
+            width: 100%;
+        }
+    }
+}

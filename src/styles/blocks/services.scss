@@ -6,6 +6,18 @@
     sup{
         font-size: 60%;
     }
+    &__how{
+        background: #fbf8f2;
+        border-radius: 2px;
+        margin: -40px 0 0 0;
+        padding: 24px 40px 32px 28px;
+        h3{
+            margin: 0 0 12px 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
     &__service{        
         background-repeat: no-repeat;
         background-size: 52px;
@@ -56,6 +68,15 @@
         }
         &--default{
             background-image: url('../img/services-washing.svg');
+        }
+        &--mosquito{
+            background-image: url('../img/services-mosquito.svg');
+        }
+        &--pet-grooming{
+            background-image: url('../img/services-pet-grooming.svg');
+        }
+        &--master{
+            background-image: url('../img/services-master.svg');
         }
     }
 }

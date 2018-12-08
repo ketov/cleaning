@@ -42,6 +42,46 @@ input{
     padding: 14px 0 16px 16px;    
 }
 
+#range-general-home{
+    display: none;
+}
+
+#range-support-home{
+    display: none;
+}
+
+#range-repair-home{
+    display: none;
+}
+
+.tabs{
+    border: 2px solid $green;
+    border-radius: 40px;
+    display: table;
+    margin: 0 auto 28px;
+    width: 280px;
+    &__tab{
+        cursor: pointer;
+        float: left;
+        padding: 9px 0 14px 0;
+        text-align: center;
+        width: 50%;
+        transition: 0.2s;
+        &:hover{
+            background: $green;
+        }
+        &--1{
+            border-radius: 18px 0 0 18px;
+        }
+        &--2{
+            border-radius: 0 18px 18px 0;
+        }
+    }
+    &__tab.active{
+        background: $green;
+    }
+}
+
 @font-face{
     font-family: GeometriaRegular;
     src: url('../fonts/Geometria.ttf');
@@ -215,7 +255,19 @@ button{
 #input-form-header-support-phone-error,
 #input-form-header-support-success,
 #input-form-header-repair-phone-error,
-#input-form-header-repair-success
+#input-form-header-repair-success,
+#input-form-consult-general-phone-error,
+#input-form-consult-general-success,
+#input-form-consult-repair-phone-error,
+#input-form-consult-repair-success,
+#input-form-consult-support-phone-error,
+#input-form-consult-support-success,
+#input-form-general-success,
+#input-form-general-phone-error,
+#input-form-support-success,
+#input-form-support-phone-error,
+#input-form-repair-success,
+#input-form-repair-phone-error
 {
     margin: 0 0 28px 0;
     text-align: center;

@@ -1,0 +1,16 @@
+section.form.parallax-window(data-parallax="scroll" data-image-src="assets/img/form-bg.jpg")
+    div.wrapper
+        h2 Заявка на уборку
+        div.row-fluid.show-grid
+            div.span3.offset3 
+                input#input-form-repair-name(type="text" placeholder="Ваше имя")
+            div.span3
+                input#input-form-repair-phone(type="text" placeholder="Телефон")
+        div.row-fluid.show-grid
+            div.span6.offset3 
+                textarea#input-form-repair-message(placeholder="Сообщение")
+        div.row-fluid.show-grid
+            div.span6.offset3 
+                div#input-form-repair-success.success-text
+                div#input-form-repair-phone-error.error-text
+                button#form-repair-button Отправить

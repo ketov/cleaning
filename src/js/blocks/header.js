@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $('#header-eco-button').on('click', function () {
+        var top = $(window).scrollTop() + 100;
+        $('#form-header-eco').css({'top': top});
+        $('.black-bg').stop(true, true).fadeIn(300);
+        setTimeout(function () {
+            $('#form-header-eco').stop(true, true).fadeIn(300);
+        }, 350);
+    });
+    
     $('#header-general-button').on('click', function () {
         var top = $(window).scrollTop() + 100;
         $('#form-header-general').css({'top': top});

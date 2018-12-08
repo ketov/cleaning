@@ -3,12 +3,17 @@ section.form.parallax-window(data-parallax="scroll" data-image-src="assets/img/f
         h2 Заявка на уборку
         div.row-fluid.show-grid
             div.span3.offset3 
-                input(type="text" placeholder="Ваше имя")
+                input#input-form-general-name(type="text" placeholder="Ваше имя")
             div.span3
-                input(type="text" placeholder="Телефон")
+                input#input-form-general-phone(type="text" placeholder="Телефон")
         div.row-fluid.show-grid
             div.span6.offset3 
-                textarea(placeholder="Сообщение")
+                textarea#input-form-general-message(placeholder="Сообщение")
+                | <input id="input-form-general-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+                | <input id="input-form-general-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />    
+                    
         div.row-fluid.show-grid
             div.span6.offset3 
-                button Отправить
+                div#input-form-general-success.success-text
+                div#input-form-general-phone-error.error-text
+                button#form-general-button Отправить

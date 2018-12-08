@@ -1,0 +1,124 @@
+doctype html
+html
+    head
+        title Академия чистоты | Эко-уборка
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        include includes/gtm1
+        script(src="https://maps.googleapis.com/maps/api/js")
+    body
+        include includes/gtm2
+        include includes/black-bg
+        include includes/form-header-eco
+        include includes/form-consult-eco
+        
+
+        header
+            div.wrapper
+                div.logo
+                    img.logo-img(src="assets/img/logo.png" alt="логотип")
+                    a.logo-link(href="index.php") 
+                        | Академия 
+                        br
+                        | Чистоты                    
+                nav
+                    a.header__works(href="#") Как мы делаем уборку
+                    a.header__form(href="#") Заявка
+                    a.header__map-container(href="#") Контакты
+
+                button.header__order#header-eco-button Оформить заявку
+                a.phone(href="tel:+74952087844") 
+                    h3 8 (495) 208-78-44
+                div.clear
+
+
+        
+        section.offer.parallax-window(data-parallax="scroll" data-image-src="assets/img/offer-bg.jpg")
+            div.wrapper
+                h1 Эко-уборка квартир и&nbsp;домов в&nbsp;Московской области от 5 000 руб.
+                p.comment Работаем по направлениям: Волоколамское, Ильинское, Минское, Новорижское, Рублёвское шоссе, район Истры.
+
+                div.row-fluid.show-grid#range-general
+                    div.span6.offset3.eco-table
+                        div.row-eco
+                            div.col.width100 
+                            div.col Разовая уборка
+                            div.col Постоянная уборка
+                            div.clear
+                        div.row-eco
+                            div.col.width100 Дом
+                            div.col 
+                                | От 80 руб./м
+                                sup 2
+                            div.col 
+                                | От 50 руб./м
+                                sup 2
+                            div.clear
+                        div.row-eco
+                            div.col.width100 Квартира
+                            div.col 
+                                | От 85 руб./м
+                                sup 2
+                            div.col 
+                                | От 70 руб./м
+                                sup 2
+                            div.clear
+
+
+
+        include includes/form-count-eco
+        include includes/what-is-eco
+        include includes/advantages
+        include includes/geography
+        include includes/works-eco
+        
+        section.additional
+            div.wrapper
+                h2 Также мы делаем
+                div.row-fluid.show-grid
+
+                    a(href="index.php").span4.additional__block.additional__block--general
+                        span.text 
+                            span Генеральную уборку
+
+                    a(href="support.html").span4.additional__block.additional__block--support
+                        span.text 
+                            span Поддерживающую уборку
+
+                    a(href="repair.html").span4.additional__block.additional__block--repair
+                        span.text 
+                            span Уборку после ремонта
+
+                    
+
+        include includes/services
+        include includes/form-eco
+
+        include includes/contacts-eco
+
+        //include includes/map
+        footer.footer--agreement
+            div.wrapper
+                div.row-fluid.show-grid
+                    div.span3.footer__copyright © 2018 Академия Чистоты
+                    div.span3.footer__agree
+                        a.agree(href="agreement.html") Соглашение на обработку персональных данных
+                    div.span3.footer__ketov
+                        span
+                            | Разработка — 
+                            a.ketov(href="http://ketov.name" target="_blank") Юрий Кетов
+                    div.span3.phone.footer__phone
+                        a(href="tel:+74952087844") 
+                            h3 8 (495) 208-78-44
+        //include includes/footer
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")
+        include includes/calltouch

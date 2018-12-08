@@ -29,7 +29,7 @@ if ($email !== false) {
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=windows-1251' . "\r\n";
 
-    mail("ketov1992@list.ru", iconv("utf-8", "windows-1251", "После ремонта.Шапка"), $message, $headers);
+    mail("2087844@bk.ru", iconv("utf-8", "windows-1251", "После ремонта.Шапка"), $message, $headers);
 
 
     header("Success: ");

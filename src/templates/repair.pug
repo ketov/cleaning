@@ -10,31 +10,43 @@ html
         meta(content='width' name='MobileOptimized')
         meta(content='yes' name='apple-mobile-web-app-capable')
         link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        include includes/gtm1
         script(src="https://maps.googleapis.com/maps/api/js")
     body
         include includes/black-bg
         include includes/form-header-repair
-        include includes/form-consult-general
-
+        include includes/form-consult-repair
+        
 
         header
+            include includes/gtm2
             div.wrapper
-                a.logo(href="index.html") Академия Чистоты
+                div.logo
+                    img.logo-img(src="assets/img/logo.png" alt="логотип")
+                    a.logo-link(href="index.php") 
+                        | Академия 
+                        br
+                        | Чистоты 
                 nav
                     a.header__works(href="#") Как мы делаем уборку
                     a.header__form(href="#") Заявка
                     a.header__map-container(href="#") Контакты
 
                 button.header__order#header-repair-button Оформить заявку
-                a.phone(href="tel:+79268026280") 
-                    h3 8 (926) 802-62-80
+                a.phone(href="tel:+74952087844") 
+                    h3 8 (495) 208-78-44
                 div.clear
 
 
         section.offer.parallax-window(data-parallax="scroll" data-image-src="assets/img/offer-bg.jpg")
             div.wrapper
-                h1 Уборка после ремонта в&nbsp;московской области от 8 000 руб.
-                p.comment Работаем по направлениям: Рублёвское, Новорижское, Ильинское, Волоколамское шоссе, район Истры.
+                h1 Уборка после ремонта в&nbsp;Московской области от 8 000 руб.
+                p.comment Работаем по направлениям: Волоколамское, Ильинское, Минское, Новорижское, Рублёвское шоссе, район Истры.
+
+                div.tabs
+                    div.tabs__tab.tabs__tab--1.active(data-show="range-repair" data-hide="range-repair-home") Квартиры
+                    div.tabs__tab.tabs__tab--2(data-show="range-repair-home" data-hide="range-repair") Дома
+                    div.clear
 
                 div.row-fluid.show-grid#range-repair
                     div.span6.offset2
@@ -54,6 +66,24 @@ html
                         h1#amount2
 
 
+                div.row-fluid.show-grid#range-repair-home
+                    div.span6.offset2
+                        div.span9 
+                            label(for="amount-home") Площадь дома
+                            div#slider-range-home
+
+                        div.span2#range-slider-input
+                            input(type="text" id="amount-home" readonly)
+
+                        div.span1.unit
+                            | м
+                            sup 2   
+
+                    div.span4
+                        div Примерная стоимость
+                        h1#amount2-home         
+
+
 
         include includes/form-count-repair
         include includes/advantages
@@ -65,20 +95,44 @@ html
             div.wrapper
                 h2 Также мы делаем
                 div.row-fluid.show-grid
-                    a(href="index.html").span6.additional__block.additional__block--green
-                        h3 
+                    a(href="index.php").span4.additional__block.additional__block--general
+                        span.text 
                             span Генеральную уборку
 
-                    a(href="support.html").span6.additional__block.additional__block--orange
-                        h3 
+                    a(href="support.html").span4.additional__block.additional__block--support
+                        span.text 
                             span Поддерживающую уборку
+
+                    a(href="eco.html").span4.additional__block.additional__block--eco
+                        span.text 
+                            span Эко-уборку
 
 
         include includes/services-repair
-        include includes/form-general
-        include includes/map
-        include includes/footer
+        include includes/form-repair
+
+
+        include includes/contacts-repair
+
+        footer.footer--agreement
+            div.wrapper
+                div.row-fluid.show-grid
+                    div.span3.footer__copyright © 2018 Академия Чистоты
+                    div.span3.footer__agree
+                        a.agree(href="agreement.html") Соглашение на обработку персональных данных
+                    div.span3.footer__ketov
+                        span
+                            | Разработка — 
+                            a.ketov(href="http://ketov.name" target="_blank") Юрий Кетов
+                    div.span3.phone.footer__phone
+                        a(href="tel:+74952087844") 
+                            h3 8 (495) 208-78-44
+
+
+        //include includes/map
+        //include includes/footer
        
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
         script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
         script(src="assets/js/app.min.js")
+        include includes/calltouch
