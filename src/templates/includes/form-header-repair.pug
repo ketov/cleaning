@@ -5,6 +5,8 @@ section.c-form#form-header-repair
     h2 Заявка на&nbsp;клининг
     p.comment Оставьте ваш телефон. Мы свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут, чтобы уточнить детали и&nbsp;оформить заявку.
     input#input-form-header-repair-phone(type="text" placeholder="Номер телефона")
+    | <input id="input-form-header-repair-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+    | <input id="input-form-header-repair-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
     div#input-form-header-repair-phone-error.error-text
     div#input-form-header-repair-success.success-text
     button#form-header-repair-button Отправить!

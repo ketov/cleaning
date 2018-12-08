@@ -1,23 +1,19 @@
 $(document).ready(function () {
     
-
     $('#form-header-eco-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
-        var email = $('#input-form-header-eco-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
-        formData.append('email', email);
-        //formData.append('course', course);
+        var email = $('#input-form-header-eco-phone').val().trim();        
+        var campaign = $('#input-form-header-eco-campaign').val().trim();        
+        var term = $('#input-form-header-eco-term').val().trim();
+        formData.append('email', email);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
-
             if (req.readyState == 4) {
                 if (req.status == 200) {
-
                     var success = req.getResponseHeader("Success");
                     if (success != null) {
                         $('#input-form-header-eco-success').html("Ваша заявка принята. Менеджер свяжется с вами в течении часа.");
@@ -40,7 +36,6 @@ $(document).ready(function () {
                                'ni': 0
                             }
                         });
-
                         return;
                     } else {
                         $('#input-form-header-eco-phone').addClass('error');
@@ -56,20 +51,18 @@ $(document).ready(function () {
     
     
     
-    
     $('#form-count-eco-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var name = $('#input-form-count-eco-name').val().trim();
-        var phone = $('#input-form-count-eco-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
+        var phone = $('#input-form-count-eco-phone').val().trim();        
+        var campaign = $('#input-form-count-eco-campaign').val().trim();        
+        var term = $('#input-form-count-eco-term').val().trim();
         formData.append('name', name);
         formData.append('phone', phone);
-        //formData.append('course', course);
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -92,7 +85,6 @@ $(document).ready(function () {
                                'ni': 0
                             }
                         });
-                        
                         return;
                     } else {
                         $('#input-form-count-eco-phone').addClass('error');
@@ -108,24 +100,21 @@ $(document).ready(function () {
     
     
     
-    
     $('#form-consult-eco-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var email = $('#input-form-consult-eco-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
-        formData.append('email', email);
-        //formData.append('course', course);
+        var campaign = $('#input-form-consult-eco-campaign').val().trim();        
+        var term = $('#input-form-consult-eco-term').val().trim();
+        
+        formData.append('email', email);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
-
             if (req.readyState == 4) {
                 if (req.status == 200) {
-
                     var success = req.getResponseHeader("Success");
                     if (success != null) {
                         $('#input-form-consult-eco-success').html("Ваша заявка принята. Менеджер свяжется с вами в течении часа.");
@@ -148,7 +137,6 @@ $(document).ready(function () {
                                'ni': 0
                             }
                         });
-
                         return;
                     } else {
                         $('#input-form-consult-eco-phone').addClass('error');
@@ -164,26 +152,21 @@ $(document).ready(function () {
     
     
     
-    
-    
-    
-    
-     
     $('#form-eco-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var name = $('#input-form-eco-name').val().trim();
         var phone = $('#input-form-eco-phone').val().trim();
         var message = $('#input-form-eco-message').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
+        var campaign = $('#input-form-eco-campaign').val().trim();        
+        var term = $('#input-form-eco-term').val().trim();
+        
         formData.append('name', name);
         formData.append('phone', phone);
-        formData.append('message', message);
-        //formData.append('course', course);
+        formData.append('message', message);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -207,7 +190,6 @@ $(document).ready(function () {
                                'ni': 0
                             }
                         });
-                        
                         return;
                     } else {
                         $('#input-form-eco-phone').addClass('error');
@@ -220,9 +202,4 @@ $(document).ready(function () {
         req.open("POST", "formEco.php", true);
         req.send(formData);
     });
-    
-    
 });
-
-
-

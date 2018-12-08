@@ -7,6 +7,8 @@ section.form-count
                         input#input-form-count-repair-name(type="text" placeholder="Ваше имя")
                     div.span4
                         input#input-form-count-repair-phone(type="text" placeholder="Телефон")
+                        | <input id="input-form-count-repair-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+                        | <input id="input-form-count-repair-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />    
                     div.span4
                         button#form-count-repair-button Рассчитать стоимость
                 div.row-fluid.show-grid

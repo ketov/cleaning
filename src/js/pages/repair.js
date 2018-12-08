@@ -70,12 +70,13 @@ $(document).ready(function () {
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
-        var email = $('#input-form-header-repair-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
-        formData.append('email', email);
-        //formData.append('course', course);
+        var email = $('#input-form-header-repair-phone').val().trim();                
+        var campaign = $('#input-form-header-repair-campaign').val().trim();        
+        var term = $('#input-form-header-repair-term').val().trim();
+        
+        formData.append('email', email);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -121,21 +122,19 @@ $(document).ready(function () {
     
     
     
-    
-    
     $('#form-count-repair-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var name = $('#input-form-count-repair-name').val().trim();
-        var phone = $('#input-form-count-repair-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
+        var phone = $('#input-form-count-repair-phone').val().trim();        
+        var campaign = $('#input-form-count-repair-campaign').val().trim();        
+        var term = $('#input-form-count-repair-term').val().trim();
+
         formData.append('name', name);
         formData.append('phone', phone);
-        //formData.append('course', course);
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -172,20 +171,18 @@ $(document).ready(function () {
         req.send(formData);
     });
     
-    
-    
-    
+
     $('#form-consult-repair-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
-        var email = $('#input-form-consult-repair-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
-        formData.append('email', email);
-        //formData.append('course', course);
+        var email = $('#input-form-consult-repair-phone').val().trim();        
+        var campaign = $('#input-form-consult-repair-campaign').val().trim();        
+        var term = $('#input-form-consult-repair-term').val().trim();
+        
+        formData.append('email', email);       
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -232,20 +229,20 @@ $(document).ready(function () {
     
     
     $('#form-repair-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var name = $('#input-form-repair-name').val().trim();
         var phone = $('#input-form-repair-phone').val().trim();
         var message = $('#input-form-repair-message').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
+        var campaign = $('#input-form-repair-campaign').val().trim();        
+        var term = $('#input-form-repair-term').val().trim();
+        
         formData.append('name', name);
         formData.append('phone', phone);
-        formData.append('message', message);
-        //formData.append('course', course);
+        formData.append('message', message);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 

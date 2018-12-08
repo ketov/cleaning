@@ -5,6 +5,8 @@ section.c-form#form-header-support
     h2 Заявка на&nbsp;клининг
     p.comment Оставьте ваш телефон. Мы свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут, чтобы уточнить детали и&nbsp;оформить заявку.
     input#input-form-header-support-phone(type="text" placeholder="Номер телефона")
+    | <input id="input-form-header-support-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+    | <input id="input-form-header-support-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
     div#input-form-header-support-phone-error.error-text
     div#input-form-header-support-success.success-text
     button#form-header-support-button Отправить!

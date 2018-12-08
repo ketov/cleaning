@@ -63,16 +63,16 @@ $(document).ready(function () {
     
     
     $('#form-header-support-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
-        var email = $('#input-form-header-support-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
-        formData.append('email', email);
-        //formData.append('course', course);
+        var email = $('#input-form-header-support-phone').val().trim();        
+        var campaign = $('#input-form-header-support-campaign').val().trim();        
+        var term = $('#input-form-header-support-term').val().trim();
+        
+        formData.append('email', email);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -122,14 +122,14 @@ $(document).ready(function () {
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var name = $('#input-form-count-support-name').val().trim();
-        var phone = $('#input-form-count-support-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
+        var phone = $('#input-form-count-support-phone').val().trim();        
+        var campaign = $('#input-form-count-support-campaign').val().trim();        
+        var term = $('#input-form-count-support-term').val().trim();
         formData.append('name', name);
         formData.append('phone', phone);
-        //formData.append('course', course);
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -168,19 +168,17 @@ $(document).ready(function () {
     
     
     
-    
-    
     $('#form-consult-support-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var email = $('#input-form-consult-support-phone').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
-        formData.append('email', email);
-        //formData.append('course', course);
+        var campaign = $('#input-form-consult-support-campaign').val().trim();        
+        var term = $('#input-form-consult-support-term').val().trim();
+        
+        formData.append('email', email);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -226,20 +224,20 @@ $(document).ready(function () {
     
     
     $('#form-support-button').click(function () {
-        //$('#input__email').removeClass('error');
         var req = new XMLHttpRequest();
         var formData = new FormData();
 
-        //var name = $('#input-name').val().trim();
         var name = $('#input-form-support-name').val().trim();
         var phone = $('#input-form-support-phone').val().trim();
         var message = $('#input-form-support-message').val().trim();
-        //var course = $('#input-course').val().trim();
-        //formData.append('name', name);
+        var campaign = $('#input-form-support-campaign').val().trim();        
+        var term = $('#input-form-support-term').val().trim();
+        
         formData.append('name', name);
         formData.append('phone', phone);
-        formData.append('message', message);
-        //formData.append('course', course);
+        formData.append('message', message);        
+        formData.append('campaign', campaign);
+        formData.append('term', term);
 
         req.onreadystatechange = function () {
 
@@ -276,6 +274,5 @@ $(document).ready(function () {
         req.open("POST", "formSupport.php", true);
         req.send(formData);
     });
-    
     
 });

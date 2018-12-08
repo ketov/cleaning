@@ -9,6 +9,9 @@ section.form.parallax-window(data-parallax="scroll" data-image-src="assets/img/f
         div.row-fluid.show-grid
             div.span6.offset3 
                 textarea#input-form-repair-message(placeholder="Сообщение")
+                | <input id="input-form-repair-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+                | <input id="input-form-repair-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
+
         div.row-fluid.show-grid
             div.span6.offset3 
                 div#input-form-repair-success.success-text

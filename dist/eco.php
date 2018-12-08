@@ -30,6 +30,8 @@
       <h2>Заявка на&nbsp;клининг</h2>
       <p class="comment">Оставьте ваш телефон. Мы свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут, чтобы уточнить детали и&nbsp;оформить заявку.</p>
       <input id="input-form-header-eco-phone" type="text" placeholder="Номер телефона">
+      <input id="input-form-header-eco-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+      <input id="input-form-header-eco-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
       <div class="error-text" id="input-form-header-eco-phone-error"></div>
       <div class="success-text" id="input-form-header-eco-success"></div>
       <button id="form-header-eco-button">Отправить!</button>
@@ -42,6 +44,8 @@
       <h2>Получить консультацию</h2>
       <p class="comment">Оставьте ваш телефон. Мы свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут и&nbsp;ответим на&nbsp;все вопросы.</p>
       <input id="input-form-consult-eco-phone" type="text" placeholder="Номер телефона">
+      <input id="input-form-consult-eco-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+      <input id="input-form-consult-eco-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
       <div class="error-text" id="input-form-consult-eco-phone-error"></div>
       <div class="success-text" id="input-form-consult-eco-success"></div>
       <button id="form-consult-eco-button">Отправить!</button>
@@ -98,6 +102,8 @@
               </div>
               <div class="span4">
                 <input id="input-form-count-eco-phone" type="text" placeholder="Телефон">
+                <input id="input-form-count-eco-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+                <input id="input-form-count-eco-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />    
               </div>
               <div class="span4">
                 <button id="form-count-eco-button">Рассчитать стоимость</button>
@@ -313,7 +319,7 @@
     <section class="additional">
       <div class="wrapper">
         <h2>Также мы делаем</h2>
-        <div class="row-fluid show-grid"><a class="span4 additional__block additional__block--general" href="index.php"><span class="text"> <span>Генеральную уборку</span></span></a><a class="span4 additional__block additional__block--support" href="support.html"><span class="text"> <span>Поддерживающую уборку</span></span></a><a class="span4 additional__block additional__block--repair" href="repair.html"><span class="text"> <span>Уборку после ремонта</span></span></a></div>
+        <div class="row-fluid show-grid"><a class="span4 additional__block additional__block--general" href="index.php"><span class="text"> <span>Генеральную уборку</span></span></a><a class="span4 additional__block additional__block--support" href="support.php"><span class="text"> <span>Поддерживающую уборку</span></span></a><a class="span4 additional__block additional__block--repair" href="repair.php"><span class="text"> <span>Уборку после ремонта</span></span></a></div>
       </div>
     </section>
     <section class="services">
@@ -356,6 +362,8 @@
         <div class="row-fluid show-grid">
           <div class="span6 offset3"> 
             <textarea id="input-form-eco-message" placeholder="Сообщение"></textarea>
+            <input id="input-form-eco-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+            <input id="input-form-eco-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />    
           </div>
         </div>
         <div class="row-fluid show-grid">

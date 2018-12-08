@@ -7,6 +7,8 @@ section.form-count
                         input#input-form-count-support-name(type="text" placeholder="Ваше имя")
                     div.span4
                         input#input-form-count-support-phone(type="text" placeholder="Телефон")
+                        | <input id="input-form-count-support-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+                        | <input id="input-form-count-support-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />    
                     div.span4
                         button#form-count-support-button Рассчитать стоимость
                 div.row-fluid.show-grid
