@@ -10,7 +10,7 @@ section.form-count
                         | <input id="input-form-count-support-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
                         | <input id="input-form-count-support-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />    
                     div.span4
-                        button#form-count-support-button Рассчитать стоимость
+                        button#form-count-support-button(onclick="yaCounter51970151.reachGoal('knopka-rasschitat-stoimost'); return true;") Рассчитать стоимость
                 div.row-fluid.show-grid
                     div#input-form-count-support-success.success-text
                     div#input-form-count-support-phone-error.error-text

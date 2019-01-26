@@ -1,0 +1,13 @@
+section.c-form#form-christmas
+    div.close-form
+        div.close-form__line.close-form__line--1
+        div.close-form__line.close-form__line--2
+    h2 Акция
+    p.comment Оставьте ваш телефон. Мы свяжемся с&nbsp;вами в&nbsp;течение 15&nbsp;минут, чтобы уточнить детали и&nbsp;оформить заявку.
+    input#form-christmas-phone(type="text" placeholder="Номер телефона")
+    | <input id="form-christmas-campaign" type="hidden" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>" />
+    | <input id="form-christmas-term" type="hidden" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>" />
+    input#form-christmas-hidden(type="hidden")
+    div#form-christmas-phone-error.error-text
+    div#form-christmas-success.success-text
+    button#form-christmas-button Участвовать!

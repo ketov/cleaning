@@ -10,16 +10,18 @@ html
         meta(content='width' name='MobileOptimized')
         meta(content='yes' name='apple-mobile-web-app-capable')
         link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
-        include includes/gtm1
+        //include includes/gtm1
+        include includes/metrika
         script(src="https://maps.googleapis.com/maps/api/js")
     body
         include includes/black-bg
         include includes/form-header-repair
+        include includes/form-christmas
         include includes/form-consult-repair
         
 
         header
-            include includes/gtm2
+            //include includes/gtm2
             div.wrapper
                 div.logo
                     img.logo-img(src="assets/img/logo.png" alt="логотип")
@@ -34,13 +36,13 @@ html
 
                 button.header__order#header-repair-button Оформить заявку
                 a.phone(href="tel:+74952087844") 
-                    h3 8 (495) 208-78-44
+                    h3.ya-phone 8 (495) 208-78-44
                 div.clear
 
 
         section.offer.parallax-window(data-parallax="scroll" data-image-src="assets/img/offer-bg.jpg")
             div.wrapper
-                h1 Уборка после ремонта в&nbsp;Московской области от 8 000 руб.
+                h1 Уборка после ремонта в&nbsp;Московской области от 6 000 руб.
                 p.comment Работаем по направлениям: Волоколамское, Ильинское, Минское, Новорижское, Рублёвское шоссе, район Истры.
 
                 div.tabs
@@ -51,15 +53,13 @@ html
                 div.row-fluid.show-grid#range-repair
                     div.span6.offset2
                         div.span9 
-                            label(for="amount") Площадь квартиры
+                            label(for="amount") Количество комнат
                             div#slider-range
 
                         div.span2#range-slider-input
                             input(type="text" id="amount" readonly)
 
-                        div.span1.unit
-                            | м
-                            sup 2
+                        div.span1.unit комн.
 
                     div.span4
                         div Примерная стоимость
@@ -84,8 +84,9 @@ html
                         h1#amount2-home         
 
 
-
+                       
         include includes/form-count-repair
+        include includes/christmas-repair
         include includes/advantages
         include includes/geography
         include includes/works-repair
@@ -126,7 +127,7 @@ html
                             a.ketov(href="http://ketov.name" target="_blank") Юрий Кетов
                     div.span3.phone.footer__phone
                         a(href="tel:+74952087844") 
-                            h3 8 (495) 208-78-44
+                            h3.ya-phone 8 (495) 208-78-44
 
 
         //include includes/map
@@ -135,4 +136,4 @@ html
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
         script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
         script(src="assets/js/app.min.js")
-        include includes/calltouch
+        //include includes/calltouch

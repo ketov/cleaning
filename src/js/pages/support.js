@@ -3,30 +3,30 @@ $(document).ready(function () {
         $(function () {
             $("#slider-range").slider({
                 range: "min",
-                value: 100,
-                min: 20,
-                max: 600,
+                value: 2,
+                min: 1,
+                max: 4,
                 slide: function (event, ui) {
                     $("#amount").val(ui.value);
                     var value = Number(ui.value);
-                    if (value <= 100) {
-                        value = 2500;
+                    if (value == 1) {
+                        value = 3000;
                     }
-                    if (value > 100 && value <= 250) {
+                    if (value == 2) {
+                        value = 3500;
+                    }
+                    if (value == 3) {
+                        value = 4000;
+                    }
+                    if (value == 4) {
                         value = 4500;
-                    }
-                    if (value > 250 && value <= 350) {
-                        value = 6500;
-                    }
-                    if (value > 350 && value <= 600) {
-                        value = Number(ui.value) * 18;
                     }
                     $('#amount2').html(value + "<span> руб.</span>");
                     //$('#amount2').html(ui.value + 10 + "<span> руб.</span>");
                 }
             });
             $("#amount").val($("#slider-range").slider("value"));
-            $('#amount2').html(2500 + "<span> руб.</span>");
+            $('#amount2').html(3500 + "<span> руб.</span>");
         });
     }
     
@@ -44,20 +44,20 @@ $(document).ready(function () {
                         value = 4000;
                     }
                     if (value > 100 && value <= 250) {
-                        value = 6000;
+                        value = 6500;
                     }
                     if (value > 250 && value <= 350) {
-                        value = 8000;
+                        value = 8800;
                     }
                     if (value > 350 && value <= 600) {
-                        value = Number(ui.value) * 18;
+                        value = Number(ui.value) * 25;
                     }
                     $('#amount2-home').html(value + "<span> руб.</span>");
                     //$('#amount2').html(ui.value + 10 + "<span> руб.</span>");
                 }
             });
             $("#amount-home").val($("#slider-range-home").slider("value"));
-            $('#amount2-home').html(4000 + "<span> руб.</span>");
+            $('#amount2-home').html(6500 + "<span> руб.</span>");
         });
     }
     

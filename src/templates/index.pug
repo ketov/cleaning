@@ -10,12 +10,14 @@ html
         meta(content='width' name='MobileOptimized')
         meta(content='yes' name='apple-mobile-web-app-capable')
         link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
-        include includes/gtm1
+        //include includes/gtm1
+        include includes/metrika
         script(src="https://maps.googleapis.com/maps/api/js")
     body
-        include includes/gtm2
+        //include includes/gtm2
         include includes/black-bg
         include includes/form-header-general
+        include includes/form-christmas
         include includes/form-consult-general
         
 
@@ -34,12 +36,15 @@ html
 
                 button.header__order#header-general-button Оформить заявку
                 a.phone(href="tel:+74952087844") 
-                    h3 8 (495) 208-78-44
+                    h3.ya-phone 8 (495) 208-78-44
                 div.clear
 
 
         include includes/offer
         include includes/form-count-general
+
+        include includes/christmas-index
+
         include includes/advantages
         include includes/geography
         include includes/works-general
@@ -62,10 +67,10 @@ html
                             a.ketov(href="http://ketov.name" target="_blank") Юрий Кетов
                     div.span3.phone.footer__phone
                         a(href="tel:+74952087844") 
-                            h3 8 (495) 208-78-44
+                            h3.ya-phone 8 (495) 208-78-44
         //include includes/footer
        
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
         script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
         script(src="assets/js/app.min.js")
-        include includes/calltouch
+        //include includes/calltouch

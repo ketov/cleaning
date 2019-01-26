@@ -10,12 +10,15 @@ html
         meta(content='width' name='MobileOptimized')
         meta(content='yes' name='apple-mobile-web-app-capable')
         link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
-        include includes/gtm1
+        //include includes/gtm1
+        include includes/metrika
         script(src="https://maps.googleapis.com/maps/api/js")
     body
-        include includes/gtm2
+        | <input type="hidden" value="<?php if($_REQUEST["utm_content"]=="5837974965") $title="Клининговые услуги в&nbsp;Волоколамске от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838001444") $title="Клининговые услуги в&nbsp;Волоколамске от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153977") $title="Клининговые услуги в&nbsp;Волоколамске от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5837919740") $title="Клининговые услуги в&nbsp;Звенигороде от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838001440") $title="Клининговые услуги в&nbsp;Звенигороде от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153973") $title="Клининговые услуги в&nbsp;Звенигороде от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5837937957") $title="Клининговые услуги в&nbsp;Истре от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838001441") $title="Клининговые услуги в&nbsp;Истре от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153974") $title="Клининговые услуги в&nbsp;Истре от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5837816362") $title="Клининговые услуги в&nbsp;Красногорске от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838001437") $title="Клининговые услуги в&nbsp;Красногорске от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153970") $title="Клининговые услуги в&nbsp;Красногорске от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5837966056") $title="Клининговые услуги в&nbsp;Кубинке &nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838001442") $title="Клининговые услуги в&nbsp;Кубинке от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153975") $title="Клининговые услуги в&nbsp;Кубинке от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838140666") $title="Клининговые услуги в&nbsp;Московской области от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153980") $title="Клининговые услуги в&nbsp;Московской области от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838140665") $title="Клининговые услуги в&nbsp;Московской области от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153981") $title="Клининговые услуги в&nbsp;Московской области от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838118525") $title="Клининговые услуги в&nbsp;Московской области от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838133153") $title="Клининговые услуги в&nbsp;Московской области от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5837904236") $title="Клининговые услуги &nbsp;Одинцово от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838001439") $title="Клининговые услуги в&nbsp;Одинцово от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153972") $title="Клининговые услуги в&nbsp;Одинцово от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5837971397") $title="Клининговые услуги в&nbsp;Рузе от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838001443") $title="Клининговые услуги в&nbsp;Рузе от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838153976") $title="Клининговые услуги в&nbsp;Рузе от&nbsp;3&nbsp;000&nbsp;руб."; if($_REQUEST["utm_content"]=="5838140664") $title="Поддерживающая уборка квартиры в&nbsp;Московской области от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5838153979") $title="Поддерживающая уборка квартиры в&nbsp;Московской области от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5838107524") $title="Поддерживающая уборка квартиры в&nbsp;Московской области от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5837780561") $title="Уборка квартир и&nbsp;домов в&nbsp;Красногорске от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5838001436") $title="Уборка квартир и&nbsp;домов в&nbsp;Красногорске от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5838153969") $title="Уборка квартир и&nbsp;домов в&nbsp;Красногорске от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5837865841") $title="Уборка квартир и&nbsp;домов в&nbsp;Одинцово от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5838001438") $title="Уборка квартир и&nbsp;домов в&nbsp;Одинцово от&nbsp;3&nbsp;000 руб."; if($_REQUEST["utm_content"]=="5838153971") $title="Уборка квартир и&nbsp;домов в&nbsp;Одинцово от&nbsp;3&nbsp;000 руб."; if(!$title) $title = "Поддерживающая уборка квартир в&nbsp;Московской области от&nbsp;3&nbsp;000 руб." ?>" />
+        //include includes/gtm2
         include includes/black-bg
         include includes/form-header-support
+        include includes/form-christmas
         include includes/form-consult-support
 
         header
@@ -33,13 +36,14 @@ html
 
                 button.header__order#header-support-button Оформить заявку
                 a.phone(href="tel:+74952087844") 
-                    h3 8 (495) 208-78-44
+                    h3.ya-phone 8 (495) 208-78-44
                 div.clear
 
 
-        section.offer.parallax-window(data-parallax="scroll" data-image-src="assets/img/offer-bg.jpg")
-            div.wrapper
-                h1 Поддерживающая уборка квартир и&nbsp;домов в&nbsp;Московской области от&nbsp;2&nbsp;500&nbsp;руб.
+        section.offer.parallax-window(style="background: url(assets/img/offer-bg.jpg) no-repeat; background-size: cover;")
+            div.wrapper 
+                //h1 Поддерживающая уборка квартир и&nbsp;домов в&nbsp;Московской области от&nbsp;3&nbsp;000&nbsp;руб.
+                h1 <?php echo $title; ?>
                 p.comment Работаем по направлениям: Волоколамское, Ильинское, Минское, Новорижское, Рублёвское шоссе, район Истры.
 
                 div.tabs
@@ -50,15 +54,13 @@ html
                 div.row-fluid.show-grid#range-support
                     div.span6.offset2
                         div.span9 
-                            label(for="amount") Площадь квартиры
+                            label(for="amount") Количество комнат
                             div#slider-range
 
                         div.span2#range-slider-input
                             input(type="text" id="amount" readonly)
 
-                        div.span1.unit
-                            | м
-                            sup 2
+                        div.span1.unit комн.
 
                     div.span4
                         div Примерная стоимость
@@ -84,7 +86,8 @@ html
 
 
 
-        include includes/form-count-support
+        include includes/form-count-support        
+        include includes/christmas-support
         include includes/advantages
         include includes/geography
         include includes/works-support
@@ -125,7 +128,7 @@ html
                             a.ketov(href="http://ketov.name" target="_blank") Юрий Кетов
                     div.span3.phone.footer__phone
                         a(href="tel:+74952087844") 
-                            h3 8 (495) 208-78-44
+                            h3.ya-phone 8 (495) 208-78-44
 
         //include includes/map
         //include includes/footer
@@ -133,4 +136,4 @@ html
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
         script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
         script(src="assets/js/app.min.js")
-        include includes/calltouch
+        //include includes/calltouch

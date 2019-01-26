@@ -92,6 +92,11 @@ input{
     src: url('../fonts/Geometria-Bold.ttf');
 }
 
+@font-face{
+    font-family: Propisi;
+    src: url('../fonts/Propisi.ttf');
+}
+
 .c-bold{
     font-family: $GB;
 }
@@ -178,7 +183,7 @@ button{
     font-family: $GR;   
     font-size: 100%;
     outline: none;
-    padding: 13px 29px 13px;
+    padding: 12px 29px 15px;
     top: 0;
     transition: 0.25s;
     &:hover{
@@ -267,7 +272,9 @@ button{
 #input-form-support-success,
 #input-form-support-phone-error,
 #input-form-repair-success,
-#input-form-repair-phone-error
+#input-form-repair-phone-error,
+#form-christmas-success,
+#form-christmas-phone-error
 {
     margin: 0 0 28px 0;
     text-align: center;
@@ -281,6 +288,10 @@ button{
 #input-form-count-repair-success
 {
     margin: 28px 0 19px 0;
+}
+
+.c-form h2{
+    line-height: 105%;
 }
 
 .error{

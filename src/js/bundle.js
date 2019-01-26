@@ -23,13 +23,15 @@ import "../../bower_components/owl.carousel/dist/owl.carousel.js";
 
 // Библиотеки
 import "script!./libs/parallax.min.js";
-//import "script!./libs/swiper.min.js";
+import "script!./libs/swiper.min.js";
 import "script!./libs/jqueryui1.12.1.js";
 import "script!./libs/jquery.ui.touch-punch.min";
+import "script!./libs/jquery.matchHeight-min";
 
 
 // Собственный js
 import "./main";
+import "./blocks/christmas";
 import "./blocks/contacts";
 import "./blocks/form";
 import "./blocks/header";

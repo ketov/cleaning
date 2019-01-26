@@ -3,30 +3,30 @@ $(document).ready(function () {
         $(function () {
             $("#slider-range").slider({
                 range: "min",
-                value: 100,
-                min: 20,
-                max: 600,
+                value: 2,
+                min: 1,
+                max: 4,
                 slide: function (event, ui) {
                     $("#amount").val(ui.value);
                     var value = Number(ui.value);
-                    if (value <= 100) {
+                    if (value == 1) {
+                        value = 6000;
+                    }
+                    if (value == 2) {
+                        value = 7000;
+                    }
+                    if (value == 3) {
                         value = 8000;
                     }
-                    if (value > 100 && value <= 250) {
-                        value = 20000;
-                    }
-                    if (value > 250 && value <= 350) {
-                        value = 28000;
-                    }
-                    if (value > 350 && value <= 600) {
-                        value = Number(ui.value) * 80;
+                    if (value == 4) {
+                        value = 10000;
                     }
                     $('#amount2').html(value + "<span> руб.</span>");
                     //$('#amount2').html(ui.value + 10 + "<span> руб.</span>");
                 }
             });
             $("#amount").val($("#slider-range").slider("value"));
-            $('#amount2').html(8000 + "<span> руб.</span>");
+            $('#amount2').html(7000 + "<span> руб.</span>");
         });
     }
     

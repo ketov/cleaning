@@ -1,0 +1,714 @@
+#promocode2018{
+    transition: 1.7s;
+    width: 13px;
+    height: 13px;
+    top: 110px;
+    left: 15px;
+    border-radius: 15px;
+    background: rgba(255, 224, 102, 1);    
+    box-shadow: 0px 7px 24px rgba(19, 77, 127, 0);
+    padding: 0;
+    input,
+    button,
+    #promocode2018-discount-number,
+    #promocode2018-discount-text
+    {
+        display: none;
+    }
+    #promocode2018-discount-text{
+        font-size: 90%;
+        float: left;
+        margin-left: 12px;
+        margin-top: 12px;
+        width: 150px;
+    }
+    input{
+        margin-bottom: 12px;
+        width: 260px;
+    }
+    button{
+        background: $green;
+        width: 276px;
+    }
+    h2{
+        color: $orange;
+        float: left;
+        margin-bottom: 4px;
+    }
+}
+
+#christmas-tree.active #promocode2018{
+    width: 276px;
+    height: 248px;
+    position: relative;
+    top: -56px;
+    left: 48px;
+    border-radius: 2px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 7px 24px rgba(19, 77, 127, 0.08);
+    padding: 16px 20px 24px;
+}
+
+.christmas{
+    padding: 100px 0 0;
+    position: relative;
+    .wrapper{
+        position: relative;
+    }
+    &__actions{
+        margin-top: 100px;
+    }
+    &__slide-content{
+        padding: 32px;
+    }
+    &__slide{
+        color: #ffffff;
+        padding-bottom: 150px;
+        text-align: center;
+        p{
+            line-height: 140%;
+            margin-top: 4px;
+        }
+        h4{
+            font-family: Propisi, sans-serif;
+            font-size: 230%;
+        }
+        .christmas__slide-img-container img{
+            width: 44px;
+        }
+        &--1{
+            background: #7E6E60;
+        }
+        &--2{
+            background: #383774;
+        }
+        &--3{
+            background: #E44F47;
+        }
+        &--4{
+            background: #3BC3B1;
+        }
+        &--5{
+            background: #6A3468;
+        }
+    }
+    &__slide-button-outer{
+        bottom: 32px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        button{
+            background: #fff;
+            color: $black;
+            width: 100%;
+        }
+    }
+    &__slide-button-container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    &__slide-button-border{
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    &__slide-img-container{
+        display: table;
+        margin: -31px auto 0;
+        padding: 8px;
+        &--1{
+            background: #7E6E60;
+        }
+        &--2{
+            background: #383774;
+        }
+        &--3{
+            background: #E44F47;
+        }
+        &--4{
+            background: #3BC3B1;
+        }
+        &--5{
+            background: #6A3468;
+        }
+    }
+    &__triangle{
+        position: absolute;
+        width: 20px;
+        &--1{
+            top: 0;
+            left: 0;
+        }
+        &--2{
+            top: 0;
+            right: 0;
+        }
+        &--3{
+            bottom: 0;
+            right: 0;
+        }
+        &--4{
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+/* Simple SVG Christmas Lights Animation */
+
+#Christmas_Lights {
+    height: 80px;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    /*width: 100%;
+    margin: 0 auto;
+    display: block;*/
+}
+
+@media(max-width: 1560px){
+    #Christmas_Lights {
+        width: 98%;
+    }
+}
+
+@media(max-width: 1300px){
+    #christmas-tree.active #promocode2018{
+        left: -32px;
+    }
+}
+
+@media(max-width: 1110px){
+    #christmas-tree.active #promocode2018 {
+        left: -44px;
+    }
+}
+
+@media(max-width: 1000px){
+    #promocode2018 #promocode2018-discount-text {
+        margin-top: 6px;
+    }
+}
+
+@media(max-width: 930px){
+    .christmas .span8{
+        margin-left: 0 !important;;
+        margin-top: 350px;
+        width: 100% !important;
+    }
+    .christmas .span4{
+        margin-left: 0 !important;;
+        width: 100% !important;;
+    }
+    .container-tree {
+        position: relative;
+        left: -180px;
+        top: 27px;
+        display: table;
+        margin: 0 auto;
+    }
+    #christmas-tree {
+        position: relative;
+        display: table;
+        margin: 0 auto;
+        left: -178px;
+    }
+    #christmas-tree.active #promocode2018 {
+        left: 46px;
+    }
+}
+
+@media(max-width: 600px){
+    #christmas-tree.active #promocode2018 {
+        left: -31px;
+    }
+    #promocode2018 #promocode2018-discount-text {
+        margin-top: 4px;
+        font-size: 85%;
+        line-height: 115%;
+    }
+}
+
+.light_cord {
+    fill: none;
+    stroke: #174700;
+}
+
+.light_fixture {
+    fill: #134413;
+}
+
+.red_bulb {
+    fill: #CA2128;
+    stroke: #6D6D6D;
+    stroke-miterlimit: 10;
+}
+
+.green_bulb {
+    fill: #2D754A;
+    stroke: #6D6D6D;
+    stroke-miterlimit: 10;
+}
+
+.blue_bulb {
+    fill: #2C3EA8;
+    stroke: #6D6D6D;
+    stroke-miterlimit: 10;
+}
+
+.white_bulb {
+    fill: #F5EED7;
+    stroke: #6D6D6D;
+    stroke-miterlimit: 10;
+}
+
+.gold_bulb {
+    fill: #ffcc5e;
+    stroke: #6D6D6D;
+    stroke-miterlimit: 10;
+}
+
+
+/* Simply changing the opacity of the SVG fill to create the glow effect for the bulbs */
+
+.bulb {
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: glow;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes glow {
+    0% {
+        fill-opacity: 0.25;
+    }
+    100% {
+        fill-opacity: 1
+    }
+}
+
+@keyframes glow {
+    0% {
+        fill-opacity: 0.25;
+    }
+    100% {
+        fill-opacity: 1.0
+    }
+}
+
+
+/* Made a set of ten animation delays to create a more random effect of lights blinking.  Simplest way without jumping through SVG hoops. */
+
+.blink-1 {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.blink-2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.blink-3 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.blink-4 {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.blink-5 {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.blink-6 {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.blink-7 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.blink-8 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.blink-9 {
+    -webkit-animation-delay: 0.95s;
+    animation-delay: 0.95s;
+}
+
+.blink-10 {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+
+
+
+
+
+
+
+#christmas-tree{
+    position: relative;
+}
+
+.container-tree {
+    position: absolute;
+    left: 0;
+    top: 27px;
+}
+
+.socks {
+    position: absolute;
+    top: 80px; left: 10px;
+    z-index: 1;
+    transform: rotate(10deg);
+}
+
+.socks.two {
+    position: absolute;
+    top: 143px; left: -40px;
+    z-index: 1;
+    transform: rotate(-10deg);
+}
+
+.socks:hover {
+    animation: 1.9s deco  linear infinite;
+}
+
+.top {
+    position: absolute;
+    width: 15px;
+    height: 35px;
+    background: #E54B4B;
+    border-radius: 5px;
+}
+
+.foot {
+    position: absolute;
+    top: 20px; left: 0;
+    width: 25px;
+    height: 15px;
+    border-radius: 30px;
+    background: #E54B4B;
+}
+
+
+.foot.two {
+    position: absolute;
+    top: 20px; left: -10px;
+    width: 25px;
+    height: 15px;
+    border-radius: 30px;
+    background: #E54B4B;
+}
+
+.tree {
+    position: absolute;
+}
+
+.base {
+    width: 210px;
+    height: 10px;
+    background: #CCC;
+    position: absolute;
+    top: 304px; left: -45px;
+    border-radius: 100%;
+}
+
+.base:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #84714F;
+    position: absolute;
+    top: -25px; left: 83px;
+}
+
+.layer {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #499F68;
+}
+
+.layer.two{
+    position: absolute;
+    top: 30px; left: -10px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid #499F68;
+}
+
+.layer.three{
+    position: absolute;
+    top: 50px; left: -30px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 160px solid #499F68;
+}
+
+.layer.four{
+    position: absolute;
+    top: 80px; left: -50px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #499F68;
+}
+
+
+.bauble {
+    z-index: 1;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.bauble.one { 
+    top: 65px;
+    width: 13px;
+    height: 13px;
+    background: #FFE066;
+} 
+
+.bauble.two { 
+    top: 105px; left: -30px;
+    width: 13px;
+    height: 13px;
+    background: #FFE066;
+} 
+
+.bauble.three { 
+    top: 110px; left: 15px;
+    width: 13px;
+    height: 13px;
+    background: #FFE066;
+} 
+
+.bauble.four { 
+    top: 163px; left: -30px;
+    width: 13px;
+    height: 13px;
+    background: #FFE066;
+} 
+
+.deco {
+    position: absolute;
+    top: 130px; left: 30px;
+    width: 50px;
+    height: 20px;
+    background: #EF476F;
+    /*   border-radius: 100% 100% 100% 100%; */
+    transform: rotate(0deg);
+}
+
+.deco:after {
+
+}
+
+.line {
+    z-index: 1;
+    position: absolute;
+    top: 70px; left: -43px;
+    width: 70px;
+    height: 0;
+    background: #FFE066;
+    border: 1px dashed #FFF;
+    transform: rotate(-30deg);
+}
+
+.line.two {
+    top: 93px; left: -50px;
+    width: 85px;
+    height: 0;
+    background: #FFE066;
+    border: 1px dashed #FFF;
+    transform: rotate(-30deg);
+}
+
+.line.three {
+    top: 123px; left: -60px;
+    width: 106px;
+    height: 0;
+    background: #FFE066;
+    border: 1px dashed #FFF;
+    transform: rotate(-30deg);
+}
+
+.line.four {
+    top: 153px; left: -80px;
+    width: 136px;
+    height: 0;
+    background: #FFE066;
+    border: 1px dashed #FFF;
+    transform: rotate(-30deg);
+}
+
+.pressie {
+    z-index: 1;
+    position: absolute;
+    top: 250px;  left: 120px;
+    width: 60px;
+    height: 60px;
+    background: #F45B69;
+}
+
+.cover {
+    position: absolute;
+    left: -3px;
+    width: 66px;
+    height: 10px;
+    background: #F45B69;
+    border-bottom: 1px solid #AAA;
+}
+.wrap {
+    position: absolute;
+    left: 25px;
+    background: #59C3C3;
+    width: 10px;
+    height: 60px;
+}
+
+.ribbon {
+    position: absolute;
+    top: -30px; left: 10px;
+    background: #FFF;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #59C3C3;
+    transform: rotate(-10deg);
+}
+
+.ribbon:after {
+    position: absolute;
+    top: 0; left: 20px;
+    background: #FFF;
+    width: 12px;
+    height: 25px;
+    border-radius: 0 80% 20% 80%;
+    border: 3px solid #59C3C3;
+    transform: rotate(60deg);
+    content: '';
+}
+
+.pressie:hover {
+    animation: 0.5s move linear infinite;
+}
+
+@keyframes move {
+    0% { transform: rotate(10deg)}
+    50%{transform: rotate(-30deg)}
+    100%{transform: rotate(10deg)}
+}
+
+@keyframes deco {
+    0% { transform: rotate(5deg)}
+    50%{transform: rotate(-10deg)}
+    100%{transform: rotate(5deg)}
+}
+
+.light {
+    box-shadow: 1px 1px 10px #CCC,
+        -2px 1px 10px #CCC,
+        0 -1px 10px #CCC
+}
+
+.star {
+    z-index: 1;
+    position: absolute;
+    left: -49px;
+    top: -40px;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #FFE066;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg) scale(.2);
+}
+.star:before {
+    border-bottom: 80px solid #FFE066;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+
+}
+.star:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #FFE066;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
+.star.two {
+    transform: rotate(23deg) scale(.1);
+    position: absolute;
+    top: 102px; left: -60px;
+}
+
+.star-light {
+
+}
+
+.star:before {
+    border-bottom: 80px solid #FFE066;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+@media(max-width: 1100px){
+
+}
+
+@media(max-width: 1000px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 500px){
+
+}
